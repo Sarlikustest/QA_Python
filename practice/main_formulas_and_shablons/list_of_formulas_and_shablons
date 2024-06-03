@@ -1,0 +1,61 @@
+
+Шаблон для соединения с тестируемой базой данных (более подробное описание в гугл доках)
+
+# import pymysql
+# import pymysql.cursors
+# from main_config_base import host,user,password,db_name
+
+
+# try:
+#     connection = pymysql.connect(
+#     host=host,
+#     port=3306,
+#     user=user,
+#     password=password,
+#     database=db_name,
+#     cursorclass=pymysql.cursors.DictCursor
+#     )
+#     print('succsess')
+#     print('#' * 30)
+#     try:
+#         with connection.cursor() as cursor:
+#             #тут пишем запросы
+
+
+#     except Exception as e:
+#         print('An error ')
+#         print(e)        
+           
+#     finally:
+#         connection.close()
+# except Exception as ex:
+#     print('Connection error!')
+#     print(ex)
+
+
+
+Паттерн в питоне для проверки номера телефона на соответствие
+
+#  phone_pattern = r'^\+\d{11}$'
+
+# ^ - это якорь начала строки, он указывает, что совпадение должно начинаться с начала строки
+# \+ - так мы говорим питону, что + в строке это не какая-то команда а тупо + который является символом
+# \d{11} - обозначаем последовательность из 11 цифр (0-9). \должен повторятся 11 раз значит мы должны увидеть 11 цифр подряд
+# $ якорь для конца строки.
+
+
+Вот пример использования паттерна
+
+# import re
+
+
+# def valid_num(num):
+
+
+#     phone_pattern = r'^\+\d{11}$'
+
+
+#     if re.match(phone_pattern, num):
+#         return True
+#     else:
+#         return False
