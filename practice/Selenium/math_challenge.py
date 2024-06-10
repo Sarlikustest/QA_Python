@@ -29,11 +29,12 @@ the_last_list = []
 for i in true_list:
     if i.isdigit():
         the_last_list.append(i)
-for j in the_last_list:
-    j = int(j)
-print(the_last_list)
-print(type(the_last_list[0]))
-print(type(the_last_list[1]))
+
+# for j in the_last_list:
+#     j = int(j)
+# print(the_last_list)
+# print(type(the_last_list[0]))
+# print(type(the_last_list[1]))
 #sum_of_numbers = sum(the_last_list)
 
 # field_answer = driver.find_element(By.ID, "answer")
