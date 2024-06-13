@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 def test_case1():
     try:
-        driver = webdriver.Chrome()
+        driver = webdriver.Firefox()
         driver.get('https://erikdark.github.io/Qa_autotests_reg_form_pop_up/')
         login_btn = driver.find_element(By.ID, 'openModalButton')
         login_btn.click()

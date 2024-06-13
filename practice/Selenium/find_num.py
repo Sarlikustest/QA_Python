@@ -1,5 +1,5 @@
 
-import re
+
 import time
 #импортирую сам вебдрайвер
 from selenium import webdriver
